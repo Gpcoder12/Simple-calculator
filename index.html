@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator App</title>
+  <link rel="stylesheet" type="text/css" href="Style.css"></style>
+  <!-- The above  link  includes an external CSS file named "Style.css" -->
+</head>
+<h1>My Simple Calculator</h1>
+<body>
+  
+  <div class="calculator">
+   <div id="*">  
+    <input type="text" id="display" disabled>
+    
+    <!-- The input field with id "display" represents the calculator's display and is disabled to prevent user input -->
+
+    <button onclick="clearDisplay()">C</button>
+    <!-- The "C" button calls the clearDisplay() function when clicked -->
+    
+    <button onclick="clearDisplay()">Del</button>
+    <!-- The "Del" button also calls the clearDisplay() function when clicked -->
+
+    <button onclick="appendToDisplay('')">MR</button>
+    <!-- The "MR" button currently doesn't perform any action as the parameter passed to appendToDisplay() is an empty string -->
+
+    <button onclick="appendToDisplay('%')">%</button>
+    <!-- The "/" button also doesn't perform any action currently -->
+
+    <button onclick="appendToDisplay('7')">7</button>
+    <button onclick="appendToDisplay('8')">8</button>
+    <button onclick="appendToDisplay('9')">9</button>
+    <button onclick="appendToDisplay('/')">/</button>
+    <!-- The above buttons append the corresponding digits or operators to the display field -->
+
+    <button onclick="appendToDisplay('4')">4</button>
+    <button onclick="appendToDisplay('5')">5</button>
+    <button onclick="appendToDisplay('6')">6</button>
+    <button onclick="appendToDisplay('*')">*</button>
+    <!-- These buttons also append digits or operators to the display field -->
+
+    <button onclick="appendToDisplay('1')">1</button>
+    <button onclick="appendToDisplay('2')">2</button>
+    <button onclick="appendToDisplay('3')">3</button>
+    <button onclick="appendToDisplay('+')">+</button>
+    <!-- The above buttons append digits or operators to the display field -->
+
+    <button onclick="appendToDisplay('0')">0</button>
+    <button onclick="appendToDisplay('.')">.</button>
+    <!-- The above buttons append digits or a decimal point to the display of my calculator field -->
+
+    <button onclick="calculate()">=</button>
+    <!-- The "=" button calls the calculate() function when they are  clicked -->
+
+    <button onclick="appendToDisplay('-')">-</button>
+    <!-- The "-" button appends the minus operator to the display field -->
+
+  </div>
+
+  <script src="script.js">
+  </script>
+  <!-- The above line includes an external JavaScript file by the name of "script.js" -->
+</body>
+</html>
